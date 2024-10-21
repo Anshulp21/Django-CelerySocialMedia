@@ -1,0 +1,16 @@
+# Virtual environment
+my_recipe_app_env/
+
+# Environment variables
+.env
+
+# Database files
+recipe_platform/db.sqlite3
+db.sqlitex
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Media files
+media/
