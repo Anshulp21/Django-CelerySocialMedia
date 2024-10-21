@@ -45,17 +45,19 @@ Create a Virtual Environment: Open your terminal or command prompt and navigate 
 
 python -m venv my_recipe_app_env
 
-Activate Virtual Environment
-
+###### Activate Virtual Environment
 my_recipe_app_env\Scripts\activate
 
-Run Redis (make sure Redis is installed and running):
+###### Navigate 
+cd recipe_platform
+
+###### Run Redis (make sure Redis is installed and running):
 redis-cli
 
-Run Django server:
+###### Run Django server:
 python manage.py runserver
 
-Start Celery workers and beat:
+###### Start Celery workers and beat:
 
 celery -A recipe_platform worker --pool=solo --loglevel=info
 celery -A recipe_platform beat --loglevel=info
