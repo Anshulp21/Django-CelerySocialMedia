@@ -36,6 +36,8 @@ AWS_STORAGE_BUCKET_NAME=your_bucket_name
 
 # Email Configuration
 EMAIL_HOST_PASSWORD=your_password_here
+EMAIL_HOST_USER=your_email_here
+
 Replace the placeholder values with your actual AWS and email credentials.
 
 4. Run the application
@@ -60,7 +62,7 @@ python manage.py runserver
 ###### Start Celery workers and beat:
 
 celery -A recipe_platform worker --pool=solo --loglevel=info
-celery -A recipe_platform beat --loglevel=info
+###### celery -A recipe_platform beat --loglevel=info
 
 5. API Endpoints
 Token-based authentication: http://127.0.0.1:8000/api/token/
@@ -69,14 +71,14 @@ Rate recipes: http://127.0.0.1:8000/api/rate/
 
 
 
-Additional Commands
-Start Celery worker with solo pool:
+###### Additional Commands
+###### ### Start Celery worker with solo pool:
 celery -A recipe_platform worker -l debug --pool=solo
-Start Celery worker with concurrency:
+###### Start Celery worker with concurrency:
 celery -A recipe_platform worker --loglevel=info --concurrency=1
-Debug mode for Celery worker:
+###### Debug mode for Celery worker:
 celery -A recipe_platform worker --loglevel=debug
 
 
-License
-This project is licensed under the MIT License.
+**License
+This project is licensed under the MIT License.**
