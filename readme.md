@@ -18,8 +18,6 @@ Setup
 1. Clone the repository
 
 git clone https://github.com/Anshulp21/Django-Socialmedia.git
-cd Django-Socialmedia
-
 
 2. Install the dependencies
 Make sure you have Python and pip installed. Then, run the following command to install required dependencies:
