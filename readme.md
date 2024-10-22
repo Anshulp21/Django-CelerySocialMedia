@@ -80,5 +80,3 @@ celery -A recipe_platform worker --loglevel=info --concurrency=1
 celery -A recipe_platform worker --loglevel=debug
 
 
-**License
-This project is licensed under the MIT License.**
